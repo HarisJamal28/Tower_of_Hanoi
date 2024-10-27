@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chokokutai&family=Danfo&family=Smooch&display=swap");
 #MainSpace {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   height: 100vh;
