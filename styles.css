@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Danfo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chokokutai&family=Danfo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chokokutai&family=Danfo&family=Smooch&display=swap");
+#MainSpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+#MainSpace #TitleScreen {
+  width: 400px;
+  position: relative;
+  border: 5px solid #C8102E;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  background-color: white;
+}
+#MainSpace #TitleScreen .Deco {
+  width: 50px;
+  height: 200px;
+  background-color: #C8102E;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#MainSpace #TitleScreen .Deco:nth-of-type(2) {
+  width: 50px;
+  height: 200px;
+  background-color: #C8102E;
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+  top: auto;
+  left: auto;
+  transform: rotate(45deg);
+}
+#MainSpace #TitleScreen .Deco:nth-of-type(3) {
+  width: 50px;
+  height: 200px;
+  background-color: #C8102E;
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  top: -5rem;
+  left: auto;
+  transform: rotate(-45deg);
+}
+#MainSpace #TitleScreen .Deco:nth-of-type(4) {
+  width: 50px;
+  height: 200px;
+  background-color: #C8102E;
+  position: absolute;
+  right: auto;
+  bottom: -5rem;
+  top: auto;
+  left: 0;
+  transform: rotate(-45deg);
+}
+#MainSpace #TitleScreen #FirstScreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+}
+#MainSpace #TitleScreen #FirstScreen h1 {
+  font-family: "Danfo", serif;
+  font-family: "Smooch", cursive;
+  color: #C8102E;
+  font-size: 4rem;
+  text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 2rem;
+}
+#MainSpace #TitleScreen #FirstScreen button {
+  font-family: "Smooch", cursive;
+  font-size: 2rem;
+  background-color: #C8102E;
+  color: white;
+  padding: 0.2rem;
+  width: 60%;
+  border: 0;
+}
+#MainSpace #TitleScreen #FirstScreen button:hover {
+  width: 80%;
+  transition: 0.5s ease-in-out;
+}
+#MainSpace #TitleScreen #SecondScreen {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+}
+#MainSpace #TitleScreen #SecondScreen h1 {
+  font-family: "Danfo", serif;
+  font-family: "Smooch", cursive;
+  color: #C8102E;
+  font-size: 4rem;
+  text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 0rem;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #SecondScreen button {
+  font-family: "Smooch", cursive;
+  font-size: 1rem;
+  background-color: #C8102E;
+  color: white;
+  padding: 0.2rem;
+  width: 50%;
+  border: 0;
+  margin-top: 2rem;
+}
+#MainSpace #TitleScreen #SecondScreen button:hover {
+  width: 80%;
+  transition: 0.5s ease-in-out;
+}
+#MainSpace #TitleScreen #SecondScreen p {
+  width: 80%;
+  font-family: "Smooch", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+#MainSpace #TitleScreen #SecondScreen ul {
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+#MainSpace #TitleScreen #SecondScreen ul li {
+  list-style: square;
+  margin-top: 5px;
+}
+#MainSpace #TitleScreen #SecondScreen ul li::after {
+  color: #C8102E;
+}
+#MainSpace #TitleScreen #ThirdScreen {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+}
+#MainSpace #TitleScreen #ThirdScreen #Moves {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-family: "Smooch", cursive;
+  color: #C8102E;
+  font-size: 1rem;
+  text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 0rem;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod {
+  width: 10px;
+  height: 100px;
+  max-width: 10px;
+  background-color: gray;
+  overflow: visible;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod .Disc {
+  height: 20px;
+  background-color: #C8102E;
+  border-bottom: 1px solid #880c20;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Small {
+  width: 40px;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Medium {
+  width: 60px;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Large {
+  width: 80px;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Base {
+  width: 60%;
+  height: 1rem;
+  background-color: black;
+}
+#MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Beads {
+  position: absolute;
+  bottom: -2rem;
+  background-color: #C8102E;
+  height: 20px;
+  width: 20px;
+  border: transparent;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+#MainSpace #TitleScreen #ThirdScreen h1 {
+  font-family: "Danfo", serif;
+  font-family: "Smooch", cursive;
+  color: #C8102E;
+  font-size: 4rem;
+  text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 0rem;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #ThirdScreen p {
+  width: 80%;
+  font-family: "Smooch", cursive;
+  font-size: 1rem;
+  text-align: center;
+  color: #C8102E;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #FourthScreen {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 2;
+}
+#MainSpace #TitleScreen #FourthScreen h1 {
+  font-family: "Smooch", cursive;
+  color: #C8102E;
+  font-size: 3rem;
+  text-align: center;
+  text-wrap: wrap;
+  margin-bottom: 0rem;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #FourthScreen button {
+  font-family: "Smooch", cursive;
+  font-size: 1.5rem;
+  background-color: #C8102E;
+  color: white;
+  padding: 0.2rem;
+  width: 40%;
+  border: 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+#MainSpace #TitleScreen #FourthScreen button:hover {
+  width: 80%;
+  transition: 0.5s ease-in-out;
+}
+#MainSpace #TitleScreen #FourthScreen p {
+  width: 80%;
+  font-family: "Smooch", cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#MainSpace #TitleScreen #FourthScreen p span {
+  color: #C8102E;
+}
+
+@media screen and (max-width: 600px) {
+  #MainSpace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #MainSpace #TitleScreen {
+    width: 300px;
+    position: relative;
+    border: 5px solid #C8102E;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+  }
+  #MainSpace #TitleScreen .Deco {
+    width: 50px;
+    height: 200px;
+    background-color: #C8102E;
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  #MainSpace #TitleScreen .Deco:nth-of-type(2) {
+    width: 50px;
+    height: 200px;
+    background-color: #C8102E;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    top: auto;
+    left: auto;
+    transform: rotate(45deg);
+  }
+  #MainSpace #TitleScreen .Deco:nth-of-type(3) {
+    width: 50px;
+    height: 200px;
+    background-color: #C8102E;
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    top: -5rem;
+    left: auto;
+    transform: rotate(-45deg);
+  }
+  #MainSpace #TitleScreen .Deco:nth-of-type(4) {
+    width: 50px;
+    height: 200px;
+    background-color: #C8102E;
+    position: absolute;
+    right: auto;
+    bottom: -5rem;
+    top: auto;
+    left: 0;
+    transform: rotate(-45deg);
+  }
+  #MainSpace #TitleScreen #FirstScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2;
+  }
+  #MainSpace #TitleScreen #FirstScreen h1 {
+    font-family: "Danfo", serif;
+    font-family: "Smooch", cursive;
+    color: #C8102E;
+    font-size: 4rem;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  #MainSpace #TitleScreen #FirstScreen button {
+    font-family: "Smooch", cursive;
+    font-size: 2rem;
+    background-color: #C8102E;
+    color: white;
+    padding: 0.2rem;
+    width: 60%;
+    border: 0;
+  }
+  #MainSpace #TitleScreen #FirstScreen button:hover {
+    width: 80%;
+    transition: 0.5s ease-in-out;
+  }
+  #MainSpace #TitleScreen #SecondScreen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2;
+  }
+  #MainSpace #TitleScreen #SecondScreen h1 {
+    font-family: "Danfo", serif;
+    font-family: "Smooch", cursive;
+    color: #C8102E;
+    font-size: 4rem;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #SecondScreen button {
+    font-family: "Smooch", cursive;
+    font-size: 1rem;
+    background-color: #C8102E;
+    color: white;
+    padding: 0.2rem;
+    width: 50%;
+    border: 0;
+    margin-top: 2rem;
+  }
+  #MainSpace #TitleScreen #SecondScreen button:hover {
+    width: 80%;
+    transition: 0.5s ease-in-out;
+  }
+  #MainSpace #TitleScreen #SecondScreen p {
+    width: 80%;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  #MainSpace #TitleScreen #SecondScreen ul {
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7rem;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+  #MainSpace #TitleScreen #SecondScreen ul li {
+    list-style: square;
+    margin-top: 5px;
+  }
+  #MainSpace #TitleScreen #SecondScreen ul li::after {
+    color: #C8102E;
+  }
+  #MainSpace #TitleScreen #ThirdScreen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+  }
+  #MainSpace #TitleScreen #ThirdScreen #Moves {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    font-family: "Smooch", cursive;
+    color: #C8102E;
+    font-size: 1rem;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod {
+    width: 10px;
+    height: 100px;
+    max-width: 10px;
+    background-color: gray;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod .Disc {
+    height: 20px;
+    background-color: #C8102E;
+    border-bottom: 1px solid #880c20;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Small {
+    width: 40px;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Medium {
+    width: 60px;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Rod #Large {
+    width: 80px;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Base {
+    width: 60%;
+    height: 1rem;
+    background-color: black;
+  }
+  #MainSpace #TitleScreen #ThirdScreen .Game .Compartments .Beads {
+    position: absolute;
+    bottom: -4rem;
+    background-color: #C8102E;
+    height: 40px;
+    width: 50px;
+    border: transparent;
+  }
+  #MainSpace #TitleScreen #ThirdScreen h1 {
+    font-family: "Danfo", serif;
+    font-family: "Smooch", cursive;
+    color: #C8102E;
+    font-size: 3rem;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #ThirdScreen p {
+    width: 80%;
+    font-family: "Smooch", cursive;
+    font-size: 0.8rem;
+    text-align: center;
+    text-wrap: nowrap;
+    color: #C8102E;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #FourthScreen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2;
+  }
+  #MainSpace #TitleScreen #FourthScreen h1 {
+    font-family: "Smooch", cursive;
+    color: #C8102E;
+    font-size: 2rem;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #FourthScreen button {
+    font-family: "Smooch", cursive;
+    font-size: 0.8rem;
+    background-color: #C8102E;
+    color: white;
+    padding: 0.2rem;
+    width: 40%;
+    border: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  #MainSpace #TitleScreen #FourthScreen button:hover {
+    width: 80%;
+    transition: 0.5s ease-in-out;
+  }
+  #MainSpace #TitleScreen #FourthScreen p {
+    width: 80%;
+    font-family: "Smooch", cursive;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  #MainSpace #TitleScreen #FourthScreen p span {
+    color: #C8102E;
+  }
+}/*# sourceMappingURL=styles.css.map */
